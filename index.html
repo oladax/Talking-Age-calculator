@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Age.css" />
+    <title>Age Calculator👨🏾‍💻</title>
+  </head>
+  <body>
+    <main>
+      <!--<h2>Age Calculator</h2>-->
+      <h2>Age Calculator</h2>
+
+      <!--date container-->
+      <div class="Date">
+        <div class="Today">Today's Date</div>
+        <div class="Today-date">
+          <div id="da"></div>
+          <div id="ms"></div>
+          <div id="yrs"></div>
+        </div>
+      </div>
+
+      <!--Age container-->
+      <div class="Age">
+        <div class="Birthday">Enter Your Date Of Birth</div>
+        <div>
+          <input
+            type="number"
+            name=""
+            id="date"
+            required
+            minlength="1"
+            maxlength="2"
+            autocomplete="on"
+            placeholder="Date"
+          />
+          <input
+            type="number"
+            name=""
+            id="month"
+            required
+            minlength="1"
+            maxlength="2"
+            placeholder="Month"
+          />
+          <input
+            type="number"
+            name=""
+            id="year"
+            min="4"
+            maxlength="4"
+            required
+            placeholder="Year"
+          />
+        </div>
+      </div>
+
+      <!--result-->
+      <div class="paragraph">
+        <div id="PARA"></div>
+        <div id="PARA2"></div>
+        <div id="PARA1"></div>
+      </div>
+      <div><button onclick="Calculate();">Calculate</button></div>
+      <div><button onclick="Delete();">Delete</button></div>
+    </main>
+
+    <script src="./Age.js"></script>
+  </body>
+</html>
